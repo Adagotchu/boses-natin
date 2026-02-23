@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voter's Toolkit | Boses Natin</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Nav (Same as others) -->
+    <nav>
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">BOSES<span>NATIN</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gov101.html">Gov 101</a></li>
+            <li><a href="fact-check.html">Fact-Check</a></li>
+            <li><a href="https://comelec.gov.ph/?r=VoterRegistration/HowtoRegister" target="_blank" class="btn-primary">Register Now</a></li>
+        </ul>
+    </nav>
+
+    <header class="page-header toolkit-header">
+        <h1>Voter's <span class="highlight">Toolkit</span></h1>
+        <p>Your step-by-step manual for participating in Philippine democracy.</p>
+    </header>
+
+    <!-- SECTION 1: THE REGISTRATION MISSION -->
+    <section class="toolkit-section">
+        <div class="container">
+            <div class="mission-box">
+                <span class="step-tag">Step 1</span>
+                <h2>The Registration Mission</h2>
+                <p>You can't vote if you aren't registered. Here is your "Mission Briefing" for the COMELEC office.</p>
+                
+                <div class="checklist-grid">
+                    <div class="check-card">
+                        <input type="checkbox" id="id1">
+                        <label for="id1">Valid ID (Student ID/National ID)</label>
+                    </div>
+                    <div class="check-card">
+                        <input type="checkbox" id="id2">
+                        <label for="id2">Photocopy of ID</label>
+                    </div>
+                    <div class="check-card">
+                        <input type="checkbox" id="id3">
+                        <label for="id3">Black Ballpen (Always bring one!)</label>
+                    </div>
+                    <div class="check-card">
+                        <input type="checkbox" id="id4">
+                        <label for="id4">Patience (Mahaba ang pila, bes.)</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+        <!-- SECTION 2: THE PLATFORM AUDITOR -->
+        <section class="toolkit-section alt-bg">
+            <div class="container">
+                <div class="section-title">
+                    <span class="step-tag">Step 2</span>
+                    <h2>The Platform Auditor</h2>
+                    <p>Don't just listen to the jingles. Audit the promises using logic.</p>
+                </div>
+
+                <div class="auditor-tool">
+                    <!-- Question 1 -->
+                    <div class="audit-q" onclick="toggleAudit('a1')">
+                        <h4>1. Legal Power: Can they actually do it? <i class="fa-solid fa-chevron-down"></i></h4>
+                        <p id="a1" class="audit-answer">Verify if the promise matches their office. A Mayor fixes local roads; a Senator writes national laws. If a local candidate promises to change the national constitution, they are overpromising.</p>
+                    </div>
+                    <!-- Question 2 -->
+                    <div class="audit-q" onclick="toggleAudit('a2')">
+                        <h4>2. S.M.A.R.T: Is it a plan or a dream? <i class="fa-solid fa-chevron-down"></i></h4>
+                        <p id="a2" class="audit-answer">Is it <strong>Specific</strong>? Instead of "Improve Education," look for "Build 500 libraries." A real plan has numbers and a timeline. No numbers = No accountability.</p>
+                    </div>
+                    <!-- NEW Question 3 (Replacing the old Receipts) -->
+                    <div class="audit-q" onclick="toggleAudit('a3')">
+                        <h4>3. Consistency: Who is supporting them? <i class="fa-solid fa-chevron-down"></i></h4>
+                        <p id="a3" class="audit-answer">Check if their stand on issues changes depending on who they are talking to. Also, look at their campaign donors—does the candidate represent the people, or just the big businesses that funded their ads?</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- SECTION 3: THE RECEIPT HUB -->
+        <section class="toolkit-section">
+            <div class="container">
+                <div class="section-title">
+                    <span class="step-tag">Step 3</span>
+                    <h2>Finding the "Resibo"</h2>
+                    <p>Don't rely on TikTok or rumors. Use these official government portals to see the actual performance and records of our officials.</p>
+                </div>
+
+                <div class="receipt-grid">
+                    <!-- COA Receipt -->
+                    <div class="receipt-card">
+                        <div class="r-icon"><i class="fa-solid fa-file-invoice-dollar"></i></div>
+                        <h4>COA Audit Reports</h4>
+                        <p>Did they spend the public budget correctly? Check the annual audit reports for any city or agency.</p>
+                        <a href="https://www.coa.gov.ph/reports/annual-audit-reports/" target="_blank" class="r-link">Visit COA Archive &rarr;</a>
+                    </div>
+
+                    <!-- Legislative Record -->
+                    <div class="receipt-card">
+                        <div class="r-icon"><i class="fa-solid fa-scroll"></i></div>
+                        <h4>Senate & House Records</h4>
+                        <p>Check if your favorite candidate actually attended sessions or what bills they actually authored.</p>
+                        <div class="r-btns">
+                            <a href="https://legacy.senate.gov.ph/lis/default.aspx" target="_blank">Senate LIS</a>
+                            <a href="https://www.congress.gov.ph/legisdata/" target="_blank">House Records</a>
+                        </div>
+                    </div>
+
+                    <!-- SALN & Transparency -->
+                    <div class="receipt-card">
+                        <div class="r-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h4>SALN & Assets</h4>
+                        <p>Public officials are required by law to declare their wealth. You can request these from the Ombudsman or CSC.</p>
+                        <a href="https://www.ombudsman.gov.ph/request-for-copy-of-salns/" target="_blank" class="r-link">How to request SALN &rarr;</a>
+                    </div>
+
+                    <!-- Official Gazette -->
+                    <div class="receipt-card">
+                        <div class="r-icon"><i class="fa-solid fa-landmark"></i></div>
+                        <h4>Official Gazette</h4>
+                        <p>The final word on Philippine Laws. Use this to verify if a "new law" being shared online is real or fake.</p>
+                        <a href="https://www.officialgazette.gov.ph/" target="_blank" class="r-link">Go to Gazette &rarr;</a>
+                    </div>
+                </div>
+
+                <div class="pro-tip-box">
+                    <i class="fa-solid fa-lightbulb"></i>
+                    <p><strong>Note for Youth Voters:</strong> If a candidate claims to have "built 100 schools" but you can't find it in the COA reports or local budget records, treat that as a red flag!</p>
+                </div>
+            </div>
+        </section>
+
+    <!-- SECTION 4: VOTING DAY ETIQUETTE -->
+    <section class="toolkit-section">
+        <div class="container">
+            <h2 style="text-align:center; margin-bottom: 40px;">Election Day "Baon"</h2>
+            <div class="baon-grid">
+                <div class="baon-item">
+                    <i class="fa-solid fa-ban"></i>
+                    <h4>No Selfies with Ballot</h4>
+                    <p>It is illegal to take a photo of your filled-out ballot. Your vote is secret!</p>
+                </div>
+                <div class="baon-item">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h4>Bring a Kodigo</h4>
+                    <p>Write your chosen candidates on a piece of paper. You can't use your phone inside the precinct.</p>
+                </div>
+                <div class="baon-item">
+                    <i class="fa-solid fa-pen-fancy"></i>
+                    <h4>Shade Properly</h4>
+                    <p>Fully shade the circle. Don't check or cross it out, or the machine won't count it.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <!-- (Use same footer as homepage) -->
+    </footer>
+
+    <script>
+        function toggleAudit(id) {
+            const el = document.getElementById(id);
+            el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

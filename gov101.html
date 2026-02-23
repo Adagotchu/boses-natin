@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gov 101 | Philippine Government Explained</title>
+    
+    <!-- Fonts & Icons -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Navigation (Same as Home) -->
+    <nav>
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:inherit;">BOSES<span>NATIN</span></a></div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fact-check.html">Fact-Check</a></li>
+            <li><a href="voters-guide.html">Voter's Guide</a></li>
+            <li><a href="https://comelec.gov.ph/?r=VoterRegistration/HowtoRegister" target="_blank" class="btn-primary">Register Now</a></li>
+        </ul>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="container">
+            <h1>Gov <span class="highlight">101</span></h1>
+            <p>Understanding how the Philippine Government works is the first step to being an empowered citizen.</p>
+        </div>
+    </header>
+
+<!-- The Three Branches Grid -->
+<section class="branches-overview">
+    <div class="section-title">
+        <h2>The Three Co-Equal Branches</h2>
+        <p>Click a card below to see more details about their specific powers and responsibilities.</p>
+    </div>
+
+    <div class="branch-grid">
+        <!-- Add 'clickable-card' class and 'data-branch' attribute -->
+        <div class="branch-card clickable-card" data-branch="executive">
+            <div class="branch-icon"><i class="fa-solid fa-building-flag"></i></div>
+            <h3>Executive</h3>
+            <span class="tap-hint">Click for details</span>
+        </div>
+
+        <div class="branch-card clickable-card" data-branch="legislative">
+            <div class="branch-icon"><i class="fa-solid fa-gavel"></i></div>
+            <h3>Legislative</h3>
+            <span class="tap-hint">Click for details</span>
+        </div>
+
+        <div class="branch-card clickable-card" data-branch="judicial">
+            <div class="branch-icon"><i class="fa-solid fa-scale-balanced"></i></div>
+            <h3>Judicial</h3>
+            <span class="tap-hint">Click for details</span>
+        </div>
+    </div>
+</section>
+
+<!-- THE DYNAMIC DETAILS BOX -->
+<section class="details-display-area">
+    <div id="details-container" class="details-box">
+        <div class="placeholder-content">
+            <i class="fa-solid fa-arrow-up"></i>
+            <h3>Select a branch above to learn more</h3>
+        </div>
+    </div>
+</section>
+<Interactive>
+<section class="bill-journey-section">
+    <div class="container">
+        <h2 class="section-title">The Journey of a Bill</h2>
+        <p>It takes a long time for an idea to become a law. Let's follow a bill's journey through "The Gauntlet."</p>
+
+        <div class="journey-container">
+            <!-- Progress Tracker -->
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+                <div class="step-dots">
+                    <div class="dot active" title="Fun Fact: Most bills actually die in Step 2!">1</div>
+                    <div class="dot" title="Did you know? Senators can talk for hours to delay a bill.">2</div>
+                    <div class="dot" title="They meet in a 'Bicameral Committee'—aka the secret meeting room.">3</div>
+                    <div class="dot" title="If the President does nothing for 30 days, it becomes law!">4</div>
+                    <div class="dot" title="Check out 'The Official Gazette' to see new laws!">5</div>
+                </div>
+            </div>
+
+            <!-- Content Display -->
+            <div id="journey-content" class="journey-card">
+                <div class="journey-icon"><i class="fa-solid fa-lightbulb"></i></div>
+                <h3 id="step-title">Step 1: The Brainstorming</h3>
+                <p id="step-desc">A Senator or Congressman has a "Eureka!" moment and writes a draft of a bill. It's like writing a script for a movie before it gets produced.</p>
+                <div class="humor-bubble" id="step-humor">"Current status: Manifesting na pumasa."</div>
+            </div>
+
+            <!-- Controls -->
+            <div class="journey-controls">
+                <button id="prev-btn" class="btn-sub" disabled>Previous</button>
+                <button id="next-btn" class="btn-main">Next Step &rarr;</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- THE ADOBO SECTION -->
+    <section class="humor-section">
+        <div class="container">
+            <h2 class="humor-title">Still confused? <br><span>Imagine it as a Barkada Outing.</span></h2>
+            
+            <div class="humor-grid">
+                <!-- Executive -->
+                <div class="humor-card">
+                    <div class="humor-emoji">👨‍🍳</div>
+                    <h3>The Executive</h3>
+                    <p class="analogy">"Ang taga-luto ng Adobo."</p>
+                    <p class="description">They are the ones actually in the kitchen. They make sure the meat is bought and the stove is on. If the adobo is salty, everyone blames them.</p>
+                </div>
+
+                <!-- Legislative -->
+                <div class="humor-card">
+                    <div class="humor-emoji">🗣️</div>
+                    <h3>The Legislative</h3>
+                    <p class="analogy">"Ang mga Ma-reklamo sa GC."</p>
+                    <p class="description">The group chat that never ends. They debate if the adobo should have potatoes or pineapples. They make the rules, but don't hold the ladle.</p>
+                </div>
+
+                <!-- Judicial -->
+                <div class="humor-card">
+                    <div class="humor-emoji">⚖️</div>
+                    <h3>The Judicial</h3>
+                    <p class="analogy">"Ang Referee / 'The Adult'."</p>
+                    <p class="description">The one who tastes the adobo and checks if the GC rules were followed. If someone put pineapples against the rules, they call it out.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div style="text-align: center; padding: 20px; font-size: 0.8rem; color: #999;">
+        <p>Disclaimer: Ang page na ito ay para sa awareness lang. Walang bardagulan, puro resibo lang. 🧾</p>
+    </div>
+
+    <!-- Footer (Same as index) -->
+    <footer class="main-footer">
+        <!-- Re-use your footer code from index.html here -->
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
